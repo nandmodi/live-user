@@ -230,7 +230,7 @@
       const diffSec = Math.floor((now - last) / 1000);
       const mins = String(Math.floor(diffSec / 60)).padStart(2, '0');
       const secs = String(diffSec % 60).padStart(2, '0');
-      const status = diffSec <= 240 ? 'live' : 'offline';
+      const status = diffSec <= 360 ? 'live' : 'offline';
       return { status, diff: `${mins}:${secs}` };
     }
 
